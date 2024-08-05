@@ -1,0 +1,146 @@
+[
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "canvas",
+        "importPath": "reportlab.pdfgen",
+        "description": "reportlab.pdfgen",
+        "isExtraImport": true,
+        "detail": "reportlab.pdfgen",
+        "documentation": {}
+    },
+    {
+        "label": "canvas",
+        "importPath": "reportlab.pdfgen",
+        "description": "reportlab.pdfgen",
+        "isExtraImport": true,
+        "detail": "reportlab.pdfgen",
+        "documentation": {}
+    },
+    {
+        "label": "letter",
+        "importPath": "reportlab.lib.pagesizes",
+        "description": "reportlab.lib.pagesizes",
+        "isExtraImport": true,
+        "detail": "reportlab.lib.pagesizes",
+        "documentation": {}
+    },
+    {
+        "label": "A4",
+        "importPath": "reportlab.lib.pagesizes",
+        "description": "reportlab.lib.pagesizes",
+        "isExtraImport": true,
+        "detail": "reportlab.lib.pagesizes",
+        "documentation": {}
+    },
+    {
+        "label": "letter",
+        "importPath": "reportlab.lib.pagesizes",
+        "description": "reportlab.lib.pagesizes",
+        "isExtraImport": true,
+        "detail": "reportlab.lib.pagesizes",
+        "documentation": {}
+    },
+    {
+        "label": "A4",
+        "importPath": "reportlab.lib.pagesizes",
+        "description": "reportlab.lib.pagesizes",
+        "isExtraImport": true,
+        "detail": "reportlab.lib.pagesizes",
+        "documentation": {}
+    },
+    {
+        "label": "cut_image_in_half",
+        "kind": 2,
+        "importPath": "_trash.main copy",
+        "description": "_trash.main copy",
+        "peekOfCode": "def cut_image_in_half(input_directory, output_directory):\n    if not os.path.exists(output_directory):\n        os.makedirs(output_directory)\n    for filename in os.listdir(input_directory):\n        try:\n            if filename.endswith(\".jpg\") or filename.endswith(\".png\"):\n                image_path = os.path.join(input_directory, filename)\n                # Open the image\n                image = Image.open(image_path)\n                # Get the dimensions of the image",
+        "detail": "_trash.main copy",
+        "documentation": {}
+    },
+    {
+        "label": "images_to_pdf",
+        "kind": 2,
+        "importPath": "_trash.save_to_pdf",
+        "description": "_trash.save_to_pdf",
+        "peekOfCode": "def images_to_pdf(image_folder, output_pdf):\n    # Get list of image files in the folder\n    image_files = [\n        f\n        for f in os.listdir(image_folder)\n        if f.lower().endswith((\"png\", \"jpg\", \"jpeg\", \"bmp\", \"gif\"))\n    ]\n    image_files.sort()  # Sort the files to maintain order\n    if not image_files:\n        print(\"No image files found in the folder.\")",
+        "detail": "_trash.save_to_pdf",
+        "documentation": {}
+    },
+    {
+        "label": "image_folder",
+        "kind": 5,
+        "importPath": "_trash.save_to_pdf",
+        "description": "_trash.save_to_pdf",
+        "peekOfCode": "image_folder = r\"C:\\Users\\Genie240223\\Desktop\\temp\\test\\out\"\noutput_pdf = r\"C:\\Users\\Genie240223\\Desktop\\temp\\test\\out\" + \"test-1234.pdf\"\nimages_to_pdf(image_folder, output_pdf)\n# print(input_directory, output_directory, file_name)",
+        "detail": "_trash.save_to_pdf",
+        "documentation": {}
+    },
+    {
+        "label": "output_pdf",
+        "kind": 5,
+        "importPath": "_trash.save_to_pdf",
+        "description": "_trash.save_to_pdf",
+        "peekOfCode": "output_pdf = r\"C:\\Users\\Genie240223\\Desktop\\temp\\test\\out\" + \"test-1234.pdf\"\nimages_to_pdf(image_folder, output_pdf)\n# print(input_directory, output_directory, file_name)",
+        "detail": "_trash.save_to_pdf",
+        "documentation": {}
+    },
+    {
+        "label": "cut_image_in_half",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def cut_image_in_half(input_directory, output_directory):\n    if not os.path.exists(output_directory):\n        os.makedirs(output_directory)\n    for filename in os.listdir(input_directory):\n        try:\n            if filename.endswith(\".jpg\") or filename.endswith(\".png\"):\n                image_path = os.path.join(input_directory, filename)\n                # Open the image\n                image = Image.open(image_path)\n                # Get the dimensions of the image",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "images_to_pdf",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def images_to_pdf(image_folder, pdf_path_and_name):\n    if not os.path.exists(image_folder):\n        raise ValueError(f\"Input directory {image_folder} does not exist\")\n    # Create a list to store the image paths\n    image_files = [\n        f\n        for f in os.listdir(image_folder)\n        if f.lower().endswith((\"png\", \"jpg\", \"jpeg\", \"bmp\", \"gif\"))\n    ]\n    # Sort the files to maintain order",
+        "detail": "main",
+        "documentation": {}
+    }
+]
